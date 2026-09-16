@@ -2,8 +2,6 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-
-    <!-- Passt die Seite automatisch an Handy, Tablet und Desktop an -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>GSI – Links</title>
@@ -22,38 +20,43 @@
 
         .container {
             width: 100%;
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 60px 30px;
         }
 
         h1 {
-            margin: 10px 0;
-            font-size: 28px;
+            margin: 0 0 10px;
+            font-size: 42px;
         }
 
         .description {
-            margin: 0 0 30px;
-            font-size: 16px;
+            margin: 0 0 45px;
+            font-size: 20px;
             color: #555;
         }
 
         .link {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             width: 100%;
-            padding: 16px 20px;
-            margin: 15px 0;
+            min-height: 80px;
+
+            margin: 22px 0;
+            padding: 20px;
 
             background: white;
             color: black;
 
             text-decoration: none;
-            font-size: 17px;
+            font-size: 22px;
             font-weight: bold;
 
-            border-radius: 10px;
+            border-radius: 14px;
 
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
 
             transition: transform 0.15s;
         }
@@ -67,35 +70,37 @@
         }
 
         .footer {
-            margin-top: 35px;
-            font-size: 13px;
+            margin-top: 50px;
+            font-size: 15px;
             color: #777;
         }
 
-        /*
-         * Handy:
-         * Das Design bleibt gleich, aber die Abstände
-         * werden etwas kleiner, damit alles bequem auf
-         * den Bildschirm passt.
-         */
+        /* Handy */
         @media (max-width: 600px) {
 
             .container {
-                padding: 30px 15px;
+                max-width: none;
+                padding: 45px 20px;
             }
 
             h1 {
-                font-size: 26px;
+                font-size: 36px;
             }
 
             .description {
-                margin-bottom: 25px;
+                font-size: 19px;
+                margin-bottom: 35px;
             }
 
             .link {
-                padding: 15px;
-                margin: 12px 0;
-                font-size: 16px;
+                min-height: 75px;
+                margin: 18px 0;
+                font-size: 20px;
+                border-radius: 14px;
+            }
+
+            .footer {
+                margin-top: 40px;
             }
         }
     </style>
@@ -111,7 +116,6 @@
             Connect with us
         </p>
 
-        <!-- GSI WEBSITE -->
         <a
             class="link"
             href="https://www.gsi.de/start/aktuelles"
@@ -120,7 +124,6 @@
             🌐 GSI Website
         </a>
 
-        <!-- INSTAGRAM -->
         <a
             class="link"
             href="https://www.instagram.com/universeinthelab"
@@ -129,7 +132,6 @@
             📸 Instagram
         </a>
 
-        <!-- LINKEDIN -->
         <a
             class="link"
             href="https://www.linkedin.com/company/gsi-helmholtz-centre-for-heavy-ion-research/home/"
